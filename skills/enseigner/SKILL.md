@@ -71,7 +71,8 @@ Ce système repose sur deux usages distincts de l'outil natif `AskUserQuestion` 
 - **Question notée (« quiz »)** — pour toute question qui a une bonne réponse connue (sonder son niveau, vérifier qu'une notion a été comprise). Pose-la via `AskUserQuestion` avec des options, puis — comme cet outil ne note rien automatiquement — **c'est toi qui compares sa sélection à la bonne réponse et qui donnes le verdict** (correct/incorrect) et l'explication dans le texte qui suit immédiatement sa réponse. Ne révèle jamais la bonne réponse ni l'explication dans les options elles-mêmes.
 - **Question de préférence/décision** — pour tout ce qui n'a pas de bonne réponse (objectif d'apprentissage, direction voulue, énergie du moment). Pose-la via `AskUserQuestion` normalement, sans verdict à donner ensuite.
 
-`AskUserQuestion` n'ajoute pas automatiquement d'option « Je ne sais pas » aux questions notées — ajoute-la toi-même comme option explicite à chaque question de type quiz, pour qu'il puisse signaler une vraie lacune plutôt que de deviner. Une réponse « Je ne sais pas » n'est ni correcte ni incorrecte : traite-la comme un signal honnête de lacune à combler, pas comme une erreur.
+`AskUserQuestion` n'ajoute pas automatiquement d'option « Je ne sais pas » aux questions notées — ajoute-la toi-même comme option explicite à chaque question de type quiz, pour qu'il puisse signaler une vraie lacune plutôt que de deviner. Une réponse « Je ne sais pas » n'est ni correcte ni incorrecte : traite-la comme un signal honnête de lacune à combler, pas comme une erreur. De plus, sois bien vigilant à mélanger l'ordre dans lequel tu présentes les réponses. La réponse correcte ne doit pas toujours être au même endroit, et ne pas être systématiquement la plus longue ou la plus spécifique.
+
 
 ### Rédiger les options d'une question notée — une procédure de construction
 
